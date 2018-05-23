@@ -1,6 +1,6 @@
 
 ![Packagist Pre Release](https://img.shields.io/badge/packagist-v1.0.0--beta3-orange.svg)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/czewail/thinp-api/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/shonnzong/think-api/blob/master/LICENSE)
 
 think-api 是给开发者提供的一套针对thinkphp5.0的API扩展工具，帮助开发者方便快捷的建造自己的API应用。
 
