@@ -8,7 +8,8 @@ use Shonnzong\Api\JWT\Factories\Claims\Issuer;
 use Shonnzong\Api\JWT\Factories\Claims\JwtId;
 use Shonnzong\Api\JWT\Factories\Claims\NotBefore;
 use Shonnzong\Api\JWT\Factories\Claims\Subject;
-use think\Container;
+// use think\Container;
+use think\Request;
 use DateTime;
 use DateInterval;
 
@@ -33,7 +34,8 @@ class Payload
         if (isset($config['ttl']) && $config['ttl'] >= 0) {
             $this->setTTL($config['ttl']);
         }
-        $this->request = Container::get('request');
+        // $this->request = Container::get('request');
+        $this->request = Request::instance();
     }
 
     /**
