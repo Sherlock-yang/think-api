@@ -1,15 +1,15 @@
 <?php 
-namespace Zewail\Api\Exceptions;
+namespace Shonnzong\Api\Exceptions;
 
 use think\exception\Handle;
-use Zewail\Api\Http\Response;
+use Shonnzong\Api\Http\Response;
 use Exception;
 
 /**
-* @author   Chan Zewail <chanzewail@gmail.com>
-* @license  https://opensource.org/licenses/MIT MIT
-* @link     https://github.com/czewail/think-api
-*/
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
+ * @license  https://opensource.org/licenses/MIT MIT
+ * @link     https://github.com/Shonnzong/think-api
+ */
 class handleException extends Handle
 {
     /**

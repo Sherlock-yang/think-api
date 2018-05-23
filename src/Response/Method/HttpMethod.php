@@ -1,8 +1,8 @@
 <?php 
-namespace Zewail\Api\Response\Method;
+namespace Shonnzong\Api\Response\Method;
 
-use Zewail\Api\Exceptions\ResponseException;
-use Zewail\Api\Http\Response;
+use Shonnzong\Api\Exceptions\ResponseException;
+use Shonnzong\Api\Http\Response;
 
 /**
 * 

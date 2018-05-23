@@ -1,15 +1,15 @@
 <?php 
-namespace Zewail\Api\Response\Method;
+namespace Shonnzong\Api\Response\Method;
 
-use Zewail\Api\Response\Method\HttpMethod;
-use Zewail\Api\Http\Response;
+use Shonnzong\Api\Response\Method\HttpMethod;
+use Shonnzong\Api\Http\Response;
 
 /**
  * Patch 的响应
  *
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Patch extends HttpMethod
 {

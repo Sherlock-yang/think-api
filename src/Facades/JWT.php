@@ -1,17 +1,17 @@
 <?php
-namespace Zewail\Api\Facades;
+namespace Shonnzong\Api\Facades;
 
 use think\Facade;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class JWT extends Facade
 {
     protected static function getFacadeClass()
     {
-        return 'Zewail\Api\JWT\Factory';
+        return 'Shonnzong\Api\JWT\Factory';
     }
 }

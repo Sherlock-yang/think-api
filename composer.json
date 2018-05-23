@@ -1,11 +1,11 @@
 {
-    "name": "zewail/think-api",
+    "name": "Shonnzong/think-api",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "陈泽韦",
-            "email": "chanzewail@gmail.com"
+            "name": "杨尚宗",
+            "email": "Shonnzong@gmail.com"
         }
     ],
     "require": {
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zewail\\Api\\": "src/"
+            "Shonnzong\\Api\\": "src/"
         }
     }
 }

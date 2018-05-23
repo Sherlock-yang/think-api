@@ -1,26 +1,26 @@
 <?php 
-namespace Zewail\Api\Response;
+namespace Shonnzong\Api\Response;
 
-use Zewail\Api\Http\Response;
-use Zewail\Api\Setting\Set;
-use Zewail\Api\Exceptions\TypeErrorException;
-use Zewail\Api\Exceptions\ResponseException;
+use Shonnzong\Api\Http\Response;
+use Shonnzong\Api\Setting\Set;
+use Shonnzong\Api\Exceptions\TypeErrorException;
+use Shonnzong\Api\Exceptions\ResponseException;
 use think\exception\HttpException;
 
 use Config;
 use think\Model;
 use think\model\Collection as ModelCollection;
-use Zewail\Api\Response\Method\Delete as HttpDelete;
-use Zewail\Api\Response\Method\Get as HttpGet;
-use Zewail\Api\Response\Method\Patch as HttpPatch;
-use Zewail\Api\Response\Method\Post as HttpPost;
-use Zewail\Api\Response\Method\Put as HttpPut;
+use Shonnzong\Api\Response\Method\Delete as HttpDelete;
+use Shonnzong\Api\Response\Method\Get as HttpGet;
+use Shonnzong\Api\Response\Method\Patch as HttpPatch;
+use Shonnzong\Api\Response\Method\Post as HttpPost;
+use Shonnzong\Api\Response\Method\Put as HttpPut;
 
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Factory
 {
@@ -116,7 +116,7 @@ class Factory
      * 数组的响应
      *
      * @param  array
-     * @return Zewail\Api\Http\Response
+     * @return Shonnzong\Api\Http\Response
      */
     public function array(array $content = null)
     {
@@ -127,7 +127,7 @@ class Factory
      * 设置需要保留的字段
      *
      * @param  array
-     * @return Zewail\Api\Http\Response
+     * @return Shonnzong\Api\Http\Response
      */
     public function only($filter = null)
     {
@@ -139,7 +139,7 @@ class Factory
      * 设置需要排除的字段
      *
      * @param  array
-     * @return Zewail\Api\Http\Response
+     * @return Shonnzong\Api\Http\Response
      */
     public function except($filter = null)
     {
@@ -152,7 +152,7 @@ class Factory
      * 
      * @param  think\Model
      * @param  $filter
-     * @return Zewail\Api\Http\Response    
+     * @return Shonnzong\Api\Http\Response    
      */
     public function item($item, $filter = null)
     {
@@ -170,7 +170,7 @@ class Factory
      * 多个模型的响应
      *
      * @param  think\Model
-     * @return Zewail\Api\Http\Response
+     * @return Shonnzong\Api\Http\Response
      */
     public function collection($collection, $filter = null)
     {

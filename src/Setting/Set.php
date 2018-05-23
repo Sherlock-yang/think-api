@@ -1,12 +1,12 @@
 <?php 
-namespace Zewail\Api\Setting;
+namespace Shonnzong\Api\Setting;
 
 use Config;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Set
 {

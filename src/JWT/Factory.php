@@ -1,22 +1,22 @@
 <?php
-namespace Zewail\Api\JWT;
+namespace Shonnzong\Api\JWT;
 
 use Config;
 use Request;
 use think\Model;
-use Zewail\Api\Exceptions\JWTException;
-use Zewail\Api\Exceptions\UnauthenticateException;
-use Zewail\Api\Setting\Set;
-use Zewail\Api\JWT\Factories\Code;
-use Zewail\Api\JWT\Factories\Payload as PayloadFactory;
-use Zewail\Api\JWT\Factories\Claims\Collection;
-use Zewail\Api\JWT\Factories\Claims\Subject;
-use Zewail\Api\JWT\Factories\Claims\Custom;
+use Shonnzong\Api\Exceptions\JWTException;
+use Shonnzong\Api\Exceptions\UnauthenticateException;
+use Shonnzong\Api\Setting\Set;
+use Shonnzong\Api\JWT\Factories\Code;
+use Shonnzong\Api\JWT\Factories\Payload as PayloadFactory;
+use Shonnzong\Api\JWT\Factories\Claims\Collection;
+use Shonnzong\Api\JWT\Factories\Claims\Subject;
+use Shonnzong\Api\JWT\Factories\Claims\Custom;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Factory
 {

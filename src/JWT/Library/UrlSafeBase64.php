@@ -1,10 +1,10 @@
 <?php
-namespace Zewail\Api\JWT\Library;
+namespace Shonnzong\Api\JWT\Library;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class UrlSafeBase64
 {

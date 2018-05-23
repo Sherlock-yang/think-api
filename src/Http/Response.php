@@ -1,15 +1,15 @@
 <?php 
-namespace Zewail\Api\Http;
+namespace Shonnzong\Api\Http;
 
 use think\response\Json as JsonResponse;
-use Zewail\Api\Serializers\DataArraySerializer;
-use Zewail\Api\Serializers\ArraySerializer;
+use Shonnzong\Api\Serializers\DataArraySerializer;
+use Shonnzong\Api\Serializers\ArraySerializer;
 use Config;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Response extends JsonResponse
 {

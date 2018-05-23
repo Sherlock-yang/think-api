@@ -1,14 +1,14 @@
 <?php 
-namespace Zewail\Api;
+namespace Shonnzong\Api;
 
-use Zewail\Api\Response\Factory as ResponseFactory;
-use Zewail\Api\JWT\Factory as JWTFactory;
+use Shonnzong\Api\Response\Factory as ResponseFactory;
+use Shonnzong\Api\JWT\Factory as JWTFactory;
 use think\Config;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 trait Api
 {

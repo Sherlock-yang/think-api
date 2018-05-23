@@ -1,13 +1,13 @@
 <?php 
-namespace Zewail\Api\JWT\Factories;
+namespace Shonnzong\Api\JWT\Factories;
 
-use Zewail\Api\JWT\Factories\Claims\Audience;
-use Zewail\Api\JWT\Factories\Claims\Expiration;
-use Zewail\Api\JWT\Factories\Claims\IssuedAt;
-use Zewail\Api\JWT\Factories\Claims\Issuer;
-use Zewail\Api\JWT\Factories\Claims\JwtId;
-use Zewail\Api\JWT\Factories\Claims\NotBefore;
-use Zewail\Api\JWT\Factories\Claims\Subject;
+use Shonnzong\Api\JWT\Factories\Claims\Audience;
+use Shonnzong\Api\JWT\Factories\Claims\Expiration;
+use Shonnzong\Api\JWT\Factories\Claims\IssuedAt;
+use Shonnzong\Api\JWT\Factories\Claims\Issuer;
+use Shonnzong\Api\JWT\Factories\Claims\JwtId;
+use Shonnzong\Api\JWT\Factories\Claims\NotBefore;
+use Shonnzong\Api\JWT\Factories\Claims\Subject;
 use think\Container;
 use DateTime;
 use DateInterval;

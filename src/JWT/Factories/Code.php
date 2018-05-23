@@ -1,18 +1,18 @@
 <?php
-namespace Zewail\Api\JWT\Factories;
+namespace Shonnzong\Api\JWT\Factories;
 
-use Zewail\Api\JWT\Library\UrlSafeBase64;
+use Shonnzong\Api\JWT\Library\UrlSafeBase64;
 use Config;
-use Zewail\Api\Setting\Set;
-use Zewail\Api\Exceptions\JWTException;
-use Zewail\Api\Exceptions\TokenExpiredException;
-use Zewail\Api\Exceptions\TokenInvalidException;
-use Zewail\Api\Exceptions\TokenNotBeforeException;
+use Shonnzong\Api\Setting\Set;
+use Shonnzong\Api\Exceptions\JWTException;
+use Shonnzong\Api\Exceptions\TokenExpiredException;
+use Shonnzong\Api\Exceptions\TokenInvalidException;
+use Shonnzong\Api\Exceptions\TokenNotBeforeException;
 
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class Code
 {

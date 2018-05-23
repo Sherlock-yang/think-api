@@ -1,11 +1,11 @@
 <?php 
-namespace Zewail\Api\Exceptions;
+namespace Shonnzong\Api\Exceptions;
 
 use think\exception\HttpException;
 /**
- * @author   Chan Zewail <chanzewail@gmail.com>
+ * @author   Yang Shonnzong <Shonnzong@gmail.com>
  * @license  https://opensource.org/licenses/MIT MIT
- * @link     https://github.com/czewail/think-api
+ * @link     https://github.com/Shonnzong/think-api
  */
 class ResponseException extends HttpException
 {
