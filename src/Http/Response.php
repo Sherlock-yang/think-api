@@ -4,8 +4,7 @@ namespace Shonnzong\Api\Http;
 use think\response\Json as JsonResponse;
 use Shonnzong\Api\Serializers\DataArraySerializer;
 use Shonnzong\Api\Serializers\ArraySerializer;
-// use Config;
-use think\Config;
+use Config;
 
 /**
  * @author   Yang Shonnzong <Shonnzong@gmail.com>
@@ -63,8 +62,7 @@ class Response extends JsonResponse
         $config = require($configPath);
 
         // 读取tp配置文件
-        // $_config = Config::pull('api');
-        $_config = Config::load('api');
+        $_config = Config::pull('api');
 
         if ($config && is_array($config)) {
             $this->config = array_merge($config, $_config);

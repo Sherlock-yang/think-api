@@ -7,8 +7,7 @@ use Shonnzong\Api\Exceptions\TypeErrorException;
 use Shonnzong\Api\Exceptions\ResponseException;
 use think\exception\HttpException;
 
-// use Config;
-use think\Config;
+use Config;
 use think\Model;
 use think\model\Collection as ModelCollection;
 use Shonnzong\Api\Response\Method\Delete as HttpDelete;
@@ -96,7 +95,7 @@ class Factory
      * @param  [type]  $name [description]
      * @return boolean       [description]
      */
-    public static function method($method = 'get')
+    public function method($method = 'get')
     {
         if ($this->hasMethod($method)) {
             return new $this->methodMap[strtolower($method)];
@@ -119,7 +118,7 @@ class Factory
      * @param  array
      * @return Shonnzong\Api\Http\Response
      */
-    public static function array(array $content = null)
+    public function array(array $content = null)
     {
         return new Response($content);
     }
@@ -155,7 +154,7 @@ class Factory
      * @param  $filter
      * @return Shonnzong\Api\Http\Response    
      */
-    public static function item($item, $filter = null)
+    public function item($item, $filter = null)
     {
         // 判断是否是Model实例
         if ($item instanceof Model) {
@@ -173,7 +172,7 @@ class Factory
      * @param  think\Model
      * @return Shonnzong\Api\Http\Response
      */
-    public static function collection($collection, $filter = null)
+    public function collection($collection, $filter = null)
     {
         if (is_array($collection)) {
             $response = array_map(function($item) use ($filter) {
@@ -197,7 +196,7 @@ class Factory
      * @param  $filter
      * @return 
      */
-    public static function paginator($collection, $filter = null)
+    public function paginator($collection, $filter = null)
     {
         if (is_array($collection->items())) {
             $response = array_map(function($item) use ($filter) {
@@ -231,7 +230,7 @@ class Factory
      * @param  资源响应内容
      * @return think\Response
      */
-    public static function created($location = null, $content = null)
+    public function created($location = null, $content = null)
     {
         $Response = new Response($content);
         $Response->setCode(201);
@@ -246,7 +245,7 @@ class Factory
      *
      * @return think\Response
      */
-    public static function noContent()
+    public function noContent()
     {
         $Response = new Response(null);
         $Response->setCode(204);
@@ -260,7 +259,7 @@ class Factory
      *
      * @return think\Response
      */
-    public static function movedPermanently($message = 'Moved Permanently')
+    public function movedPermanently($message = 'Moved Permanently')
     {
         $Response = new Response($message);
         $Response->setCode(301);
@@ -277,7 +276,7 @@ class Factory
      *
      * @return void
      */
-    public static function error($message, $statusCode)
+    public function error($message, $statusCode)
     {
         throw new ResponseException($statusCode, $message);
     }
@@ -292,7 +291,7 @@ class Factory
      *
      * @return void
      */
-    public static function success($message = null, $statusCode = 200)
+    public function success($message = null, $statusCode = 200)
     {
         $response = new Response($message);
         $response->setCode($statusCode);
@@ -309,7 +308,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorBadRequest($message = 'Bad Request')
+    public function errorBadRequest($message = 'Bad Request')
     {
         $this->error($message, 400);
     }
@@ -324,7 +323,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorUnauthorized($message = 'Unauthorized')
+    public function errorUnauthorized($message = 'Unauthorized')
     {
         $this->error($message, 401);
     }
@@ -338,7 +337,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorForbidden($message = 'Forbidden')
+    public function errorForbidden($message = 'Forbidden')
     {
         $this->error($message, 403);
     }
@@ -353,7 +352,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorNotFound($message = 'Not Found')
+    public function errorNotFound($message = 'Not Found')
     {
         $this->error($message, 404);
     }
@@ -368,7 +367,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorMethodNotAllowed($message = 'Method Not Allowed')
+    public function errorMethodNotAllowed($message = 'Method Not Allowed')
     {
         $this->error($message, 405);
     }
@@ -382,7 +381,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorNotAcceptable($message = 'Not Acceptable')
+    public function errorNotAcceptable($message = 'Not Acceptable')
     {
         $this->error($message, 406);
     }
@@ -396,7 +395,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorInternal($message = 'Internal Error')
+    public function errorInternal($message = 'Internal Error')
     {
         $this->error($message, 500);
     }  
@@ -410,7 +409,7 @@ class Factory
      *
      * @return void
      */
-    public static function errorUnavailable($message = 'Service Unavailable Error')
+    public function errorUnavailable($message = 'Service Unavailable Error')
     {
         $this->error($message, 503);
     }
